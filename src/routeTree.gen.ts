@@ -10,33 +10,336 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AbsenteismoRouteImport } from './routes/absenteismo'
+import { Route as AcidentesRouteImport } from './routes/acidentes'
+import { Route as AgendaClinicaRouteImport } from './routes/agenda-clinica'
+import { Route as AlertasRouteImport } from './routes/alertas'
+import { Route as AuditoriaRouteImport } from './routes/auditoria'
+import { Route as CadastrosRouteImport } from './routes/cadastros'
+import { Route as CipaRouteImport } from './routes/cipa'
+import { Route as ColaboradoresRouteImport } from './routes/colaboradores'
+import { Route as DocumentosRouteImport } from './routes/documentos'
+import { Route as EpcRouteImport } from './routes/epc'
+import { Route as EpiRouteImport } from './routes/epi'
+import { Route as EsocialRouteImport } from './routes/esocial'
+import { Route as EstoqueRouteImport } from './routes/estoque'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as MapaRiscoRouteImport } from './routes/mapa-risco'
+import { Route as OrganogramaRouteImport } from './routes/organograma'
+import { Route as PcmsoRouteImport } from './routes/pcmso'
+import { Route as PlanoAcaoRouteImport } from './routes/plano-acao'
+import { Route as ProntuarioRouteImport } from './routes/prontuario'
+import { Route as QuaseAcidentesRouteImport } from './routes/quase-acidentes'
+import { Route as RequisitosLegaisRouteImport } from './routes/requisitos-legais'
+import { Route as RiscosRouteImport } from './routes/riscos'
+import { Route as TreinamentosRouteImport } from './routes/treinamentos'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AbsenteismoRoute = AbsenteismoRouteImport.update({
+  id: '/absenteismo',
+  path: '/absenteismo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AcidentesRoute = AcidentesRouteImport.update({
+  id: '/acidentes',
+  path: '/acidentes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgendaClinicaRoute = AgendaClinicaRouteImport.update({
+  id: '/agenda-clinica',
+  path: '/agenda-clinica',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlertasRoute = AlertasRouteImport.update({
+  id: '/alertas',
+  path: '/alertas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuditoriaRoute = AuditoriaRouteImport.update({
+  id: '/auditoria',
+  path: '/auditoria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CadastrosRoute = CadastrosRouteImport.update({
+  id: '/cadastros',
+  path: '/cadastros',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CipaRoute = CipaRouteImport.update({
+  id: '/cipa',
+  path: '/cipa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ColaboradoresRoute = ColaboradoresRouteImport.update({
+  id: '/colaboradores',
+  path: '/colaboradores',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocumentosRoute = DocumentosRouteImport.update({
+  id: '/documentos',
+  path: '/documentos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EpcRoute = EpcRouteImport.update({
+  id: '/epc',
+  path: '/epc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EpiRoute = EpiRouteImport.update({
+  id: '/epi',
+  path: '/epi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EsocialRoute = EsocialRouteImport.update({
+  id: '/esocial',
+  path: '/esocial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EstoqueRoute = EstoqueRouteImport.update({
+  id: '/estoque',
+  path: '/estoque',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MapaRiscoRoute = MapaRiscoRouteImport.update({
+  id: '/mapa-risco',
+  path: '/mapa-risco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrganogramaRoute = OrganogramaRouteImport.update({
+  id: '/organograma',
+  path: '/organograma',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PcmsoRoute = PcmsoRouteImport.update({
+  id: '/pcmso',
+  path: '/pcmso',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlanoAcaoRoute = PlanoAcaoRouteImport.update({
+  id: '/plano-acao',
+  path: '/plano-acao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProntuarioRoute = ProntuarioRouteImport.update({
+  id: '/prontuario',
+  path: '/prontuario',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuaseAcidentesRoute = QuaseAcidentesRouteImport.update({
+  id: '/quase-acidentes',
+  path: '/quase-acidentes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RequisitosLegaisRoute = RequisitosLegaisRouteImport.update({
+  id: '/requisitos-legais',
+  path: '/requisitos-legais',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RiscosRoute = RiscosRouteImport.update({
+  id: '/riscos',
+  path: '/riscos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TreinamentosRoute = TreinamentosRouteImport.update({
+  id: '/treinamentos',
+  path: '/treinamentos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/absenteismo': typeof AbsenteismoRoute
+  '/acidentes': typeof AcidentesRoute
+  '/agenda-clinica': typeof AgendaClinicaRoute
+  '/alertas': typeof AlertasRoute
+  '/auditoria': typeof AuditoriaRoute
+  '/cadastros': typeof CadastrosRoute
+  '/cipa': typeof CipaRoute
+  '/colaboradores': typeof ColaboradoresRoute
+  '/documentos': typeof DocumentosRoute
+  '/epc': typeof EpcRoute
+  '/epi': typeof EpiRoute
+  '/esocial': typeof EsocialRoute
+  '/estoque': typeof EstoqueRoute
+  '/login': typeof LoginRoute
+  '/mapa-risco': typeof MapaRiscoRoute
+  '/organograma': typeof OrganogramaRoute
+  '/pcmso': typeof PcmsoRoute
+  '/plano-acao': typeof PlanoAcaoRoute
+  '/prontuario': typeof ProntuarioRoute
+  '/quase-acidentes': typeof QuaseAcidentesRoute
+  '/requisitos-legais': typeof RequisitosLegaisRoute
+  '/riscos': typeof RiscosRoute
+  '/treinamentos': typeof TreinamentosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/absenteismo': typeof AbsenteismoRoute
+  '/acidentes': typeof AcidentesRoute
+  '/agenda-clinica': typeof AgendaClinicaRoute
+  '/alertas': typeof AlertasRoute
+  '/auditoria': typeof AuditoriaRoute
+  '/cadastros': typeof CadastrosRoute
+  '/cipa': typeof CipaRoute
+  '/colaboradores': typeof ColaboradoresRoute
+  '/documentos': typeof DocumentosRoute
+  '/epc': typeof EpcRoute
+  '/epi': typeof EpiRoute
+  '/esocial': typeof EsocialRoute
+  '/estoque': typeof EstoqueRoute
+  '/login': typeof LoginRoute
+  '/mapa-risco': typeof MapaRiscoRoute
+  '/organograma': typeof OrganogramaRoute
+  '/pcmso': typeof PcmsoRoute
+  '/plano-acao': typeof PlanoAcaoRoute
+  '/prontuario': typeof ProntuarioRoute
+  '/quase-acidentes': typeof QuaseAcidentesRoute
+  '/requisitos-legais': typeof RequisitosLegaisRoute
+  '/riscos': typeof RiscosRoute
+  '/treinamentos': typeof TreinamentosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/absenteismo': typeof AbsenteismoRoute
+  '/acidentes': typeof AcidentesRoute
+  '/agenda-clinica': typeof AgendaClinicaRoute
+  '/alertas': typeof AlertasRoute
+  '/auditoria': typeof AuditoriaRoute
+  '/cadastros': typeof CadastrosRoute
+  '/cipa': typeof CipaRoute
+  '/colaboradores': typeof ColaboradoresRoute
+  '/documentos': typeof DocumentosRoute
+  '/epc': typeof EpcRoute
+  '/epi': typeof EpiRoute
+  '/esocial': typeof EsocialRoute
+  '/estoque': typeof EstoqueRoute
+  '/login': typeof LoginRoute
+  '/mapa-risco': typeof MapaRiscoRoute
+  '/organograma': typeof OrganogramaRoute
+  '/pcmso': typeof PcmsoRoute
+  '/plano-acao': typeof PlanoAcaoRoute
+  '/prontuario': typeof ProntuarioRoute
+  '/quase-acidentes': typeof QuaseAcidentesRoute
+  '/requisitos-legais': typeof RequisitosLegaisRoute
+  '/riscos': typeof RiscosRoute
+  '/treinamentos': typeof TreinamentosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/absenteismo'
+    | '/acidentes'
+    | '/agenda-clinica'
+    | '/alertas'
+    | '/auditoria'
+    | '/cadastros'
+    | '/cipa'
+    | '/colaboradores'
+    | '/documentos'
+    | '/epc'
+    | '/epi'
+    | '/esocial'
+    | '/estoque'
+    | '/login'
+    | '/mapa-risco'
+    | '/organograma'
+    | '/pcmso'
+    | '/plano-acao'
+    | '/prontuario'
+    | '/quase-acidentes'
+    | '/requisitos-legais'
+    | '/riscos'
+    | '/treinamentos'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/absenteismo'
+    | '/acidentes'
+    | '/agenda-clinica'
+    | '/alertas'
+    | '/auditoria'
+    | '/cadastros'
+    | '/cipa'
+    | '/colaboradores'
+    | '/documentos'
+    | '/epc'
+    | '/epi'
+    | '/esocial'
+    | '/estoque'
+    | '/login'
+    | '/mapa-risco'
+    | '/organograma'
+    | '/pcmso'
+    | '/plano-acao'
+    | '/prontuario'
+    | '/quase-acidentes'
+    | '/requisitos-legais'
+    | '/riscos'
+    | '/treinamentos'
+  id:
+    | '__root__'
+    | '/'
+    | '/absenteismo'
+    | '/acidentes'
+    | '/agenda-clinica'
+    | '/alertas'
+    | '/auditoria'
+    | '/cadastros'
+    | '/cipa'
+    | '/colaboradores'
+    | '/documentos'
+    | '/epc'
+    | '/epi'
+    | '/esocial'
+    | '/estoque'
+    | '/login'
+    | '/mapa-risco'
+    | '/organograma'
+    | '/pcmso'
+    | '/plano-acao'
+    | '/prontuario'
+    | '/quase-acidentes'
+    | '/requisitos-legais'
+    | '/riscos'
+    | '/treinamentos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AbsenteismoRoute: typeof AbsenteismoRoute
+  AcidentesRoute: typeof AcidentesRoute
+  AgendaClinicaRoute: typeof AgendaClinicaRoute
+  AlertasRoute: typeof AlertasRoute
+  AuditoriaRoute: typeof AuditoriaRoute
+  CadastrosRoute: typeof CadastrosRoute
+  CipaRoute: typeof CipaRoute
+  ColaboradoresRoute: typeof ColaboradoresRoute
+  DocumentosRoute: typeof DocumentosRoute
+  EpcRoute: typeof EpcRoute
+  EpiRoute: typeof EpiRoute
+  EsocialRoute: typeof EsocialRoute
+  EstoqueRoute: typeof EstoqueRoute
+  LoginRoute: typeof LoginRoute
+  MapaRiscoRoute: typeof MapaRiscoRoute
+  OrganogramaRoute: typeof OrganogramaRoute
+  PcmsoRoute: typeof PcmsoRoute
+  PlanoAcaoRoute: typeof PlanoAcaoRoute
+  ProntuarioRoute: typeof ProntuarioRoute
+  QuaseAcidentesRoute: typeof QuaseAcidentesRoute
+  RequisitosLegaisRoute: typeof RequisitosLegaisRoute
+  RiscosRoute: typeof RiscosRoute
+  TreinamentosRoute: typeof TreinamentosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +351,195 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/absenteismo': {
+      id: '/absenteismo'
+      path: '/absenteismo'
+      fullPath: '/absenteismo'
+      preLoaderRoute: typeof AbsenteismoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/acidentes': {
+      id: '/acidentes'
+      path: '/acidentes'
+      fullPath: '/acidentes'
+      preLoaderRoute: typeof AcidentesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agenda-clinica': {
+      id: '/agenda-clinica'
+      path: '/agenda-clinica'
+      fullPath: '/agenda-clinica'
+      preLoaderRoute: typeof AgendaClinicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/alertas': {
+      id: '/alertas'
+      path: '/alertas'
+      fullPath: '/alertas'
+      preLoaderRoute: typeof AlertasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auditoria': {
+      id: '/auditoria'
+      path: '/auditoria'
+      fullPath: '/auditoria'
+      preLoaderRoute: typeof AuditoriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cadastros': {
+      id: '/cadastros'
+      path: '/cadastros'
+      fullPath: '/cadastros'
+      preLoaderRoute: typeof CadastrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cipa': {
+      id: '/cipa'
+      path: '/cipa'
+      fullPath: '/cipa'
+      preLoaderRoute: typeof CipaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colaboradores': {
+      id: '/colaboradores'
+      path: '/colaboradores'
+      fullPath: '/colaboradores'
+      preLoaderRoute: typeof ColaboradoresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/documentos': {
+      id: '/documentos'
+      path: '/documentos'
+      fullPath: '/documentos'
+      preLoaderRoute: typeof DocumentosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/epc': {
+      id: '/epc'
+      path: '/epc'
+      fullPath: '/epc'
+      preLoaderRoute: typeof EpcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/epi': {
+      id: '/epi'
+      path: '/epi'
+      fullPath: '/epi'
+      preLoaderRoute: typeof EpiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/esocial': {
+      id: '/esocial'
+      path: '/esocial'
+      fullPath: '/esocial'
+      preLoaderRoute: typeof EsocialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/estoque': {
+      id: '/estoque'
+      path: '/estoque'
+      fullPath: '/estoque'
+      preLoaderRoute: typeof EstoqueRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mapa-risco': {
+      id: '/mapa-risco'
+      path: '/mapa-risco'
+      fullPath: '/mapa-risco'
+      preLoaderRoute: typeof MapaRiscoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/organograma': {
+      id: '/organograma'
+      path: '/organograma'
+      fullPath: '/organograma'
+      preLoaderRoute: typeof OrganogramaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pcmso': {
+      id: '/pcmso'
+      path: '/pcmso'
+      fullPath: '/pcmso'
+      preLoaderRoute: typeof PcmsoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plano-acao': {
+      id: '/plano-acao'
+      path: '/plano-acao'
+      fullPath: '/plano-acao'
+      preLoaderRoute: typeof PlanoAcaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prontuario': {
+      id: '/prontuario'
+      path: '/prontuario'
+      fullPath: '/prontuario'
+      preLoaderRoute: typeof ProntuarioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quase-acidentes': {
+      id: '/quase-acidentes'
+      path: '/quase-acidentes'
+      fullPath: '/quase-acidentes'
+      preLoaderRoute: typeof QuaseAcidentesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/requisitos-legais': {
+      id: '/requisitos-legais'
+      path: '/requisitos-legais'
+      fullPath: '/requisitos-legais'
+      preLoaderRoute: typeof RequisitosLegaisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/riscos': {
+      id: '/riscos'
+      path: '/riscos'
+      fullPath: '/riscos'
+      preLoaderRoute: typeof RiscosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/treinamentos': {
+      id: '/treinamentos'
+      path: '/treinamentos'
+      fullPath: '/treinamentos'
+      preLoaderRoute: typeof TreinamentosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AbsenteismoRoute: AbsenteismoRoute,
+  AcidentesRoute: AcidentesRoute,
+  AgendaClinicaRoute: AgendaClinicaRoute,
+  AlertasRoute: AlertasRoute,
+  AuditoriaRoute: AuditoriaRoute,
+  CadastrosRoute: CadastrosRoute,
+  CipaRoute: CipaRoute,
+  ColaboradoresRoute: ColaboradoresRoute,
+  DocumentosRoute: DocumentosRoute,
+  EpcRoute: EpcRoute,
+  EpiRoute: EpiRoute,
+  EsocialRoute: EsocialRoute,
+  EstoqueRoute: EstoqueRoute,
+  LoginRoute: LoginRoute,
+  MapaRiscoRoute: MapaRiscoRoute,
+  OrganogramaRoute: OrganogramaRoute,
+  PcmsoRoute: PcmsoRoute,
+  PlanoAcaoRoute: PlanoAcaoRoute,
+  ProntuarioRoute: ProntuarioRoute,
+  QuaseAcidentesRoute: QuaseAcidentesRoute,
+  RequisitosLegaisRoute: RequisitosLegaisRoute,
+  RiscosRoute: RiscosRoute,
+  TreinamentosRoute: TreinamentosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
